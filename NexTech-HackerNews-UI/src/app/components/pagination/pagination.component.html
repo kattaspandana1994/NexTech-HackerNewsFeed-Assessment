@@ -1,0 +1,17 @@
+<div class="paginationClass">
+        <mat-label>Records per page</mat-label>
+    <mat-form-field >    
+        <mat-label>Page Size</mat-label>        
+        <mat-select class="page-size-select" [(value)]="pageSize"   (selectionChange)="updatePageSize($event.value)">
+            <mat-option [value]="5">5</mat-option>
+            <mat-option [value]="10">10</mat-option>
+            <mat-option [value]="20">20</mat-option>
+            <mat-option [value]="50">50</mat-option>
+        </mat-select>
+    </mat-form-field>
+        <button  class="btn btn-primary" mat-stroked-button (click)="onPageChange(currentPage - 1)"
+        [disabled]="currentPage <= 1">Previous</button>
+    <span>Page {{currentPage}} of {{totalPages()}}</span>
+    <button class="btn btn-primary" mat-stroked-button (click)="onPageChange(currentPage + 1)"
+        [disabled]="currentPage >= totalPages()">Next</button>
+</div>

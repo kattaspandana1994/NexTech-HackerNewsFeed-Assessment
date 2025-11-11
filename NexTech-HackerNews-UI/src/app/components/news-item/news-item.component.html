@@ -1,0 +1,17 @@
+  @if(story){
+  <mat-card  appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>{{ story.title }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-actions>
+      @if(story.url)
+      {
+        <a class="myBtnOpen" mat-raised-button [href]="story.url" target="_blank">
+              Open story
+        </a>
+      }
+  </mat-card-actions>
+</mat-card>
+  }
+<mat-divider></mat-divider>

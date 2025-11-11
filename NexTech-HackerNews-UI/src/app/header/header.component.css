@@ -1,0 +1,25 @@
+header {
+    background-color: rgb(253, 142, 98);
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+
+}
+
+.itemsHeader {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    display: inline-block;
+    margin: 14px;
+    font-size: 40px;
+}
+
+app-user {
+    float: right;
+    margin-right: 40px;
+}

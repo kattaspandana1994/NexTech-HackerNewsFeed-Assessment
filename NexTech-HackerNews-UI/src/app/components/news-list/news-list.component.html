@@ -1,0 +1,31 @@
+<div class="news-list">
+
+  <app-search-bar [query]="query" (search)="onSearch($event)"></app-search-bar>
+
+  <app-pagination #paginationComponent  [currentPage]="currentPage" [pageSize]="pageSize" [totalCount]="totalCount"
+    (pageChange)="onPageChange($event)" (reloadStories)="onPageSize($event)"></app-pagination>
+  <div>
+
+    @if(isLoading){
+
+    <div class="loader-container">
+      <p>Loading...</p>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+
+    }
+    @else{
+    @if(stories && stories.length>0){
+
+    @for(story of stories; track story){
+    <app-news-item [story]="story"></app-news-item>
+    
+    }
+    }@else{
+    <h4 class="noStories">No stories found.</h4>
+    }
+
+    }
+
+
+  </div>
