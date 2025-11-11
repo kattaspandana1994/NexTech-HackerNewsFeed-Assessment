@@ -1,0 +1,29 @@
+<div class="paginationClass d-flex align-items-center flex-wrap gap-3 justify-content-center mt-3">
+
+  <label for="pageSize" class="form-label mb-0">Records per page:</label>
+
+<select id="pageSize"
+        class="form-select page-size-select"
+        [(ngModel)]="pageSize"
+        (change)="onPageSizeChange($event)">
+  <option [value]="5">5</option>
+  <option [value]="10">10</option>
+  <option [value]="20">20</option>
+  <option [value]="50">50</option>
+</select>
+
+
+  <button class="btn btn-outline-primary"
+          (click)="onPageChange(currentPage - 1)"
+          [disabled]="currentPage <= 1">
+    Previous
+  </button>
+
+  <span class="fw-semibold">Page {{ currentPage }} of {{ totalPages() }}</span>
+
+  <button class="btn btn-outline-primary"
+          (click)="onPageChange(currentPage + 1)"
+          [disabled]="currentPage >= totalPages()">
+    Next
+  </button>
+</div>

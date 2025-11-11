@@ -1,0 +1,32 @@
+body {
+  background-color: #fafafa;
+  padding-top: 100px; /* adjust if your header is taller */
+}
+
+.news-list {
+  margin-top: 20px;
+}
+
+.news-list {
+  max-width: 900px;
+  margin: auto;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.noStories {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.stories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

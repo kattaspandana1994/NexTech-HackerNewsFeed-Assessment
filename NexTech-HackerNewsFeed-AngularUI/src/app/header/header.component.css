@@ -1,0 +1,68 @@
+header {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 35px;
+  margin-right: 15px;
+}
+
+header .title {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.itemsHeader {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.title span {
+  color: #2c2c2c; /* dark accent */
+}
+
+app-user {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .itemsHeader {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

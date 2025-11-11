@@ -1,0 +1,52 @@
+.paginationClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px auto 25px auto;
+  font-size: 0.95rem;
+}
+
+.paginationClass select {
+  width: 80px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.paginationClass .btn {
+  min-width: 80px;
+  font-weight: 600;
+}
+
+.paginationClass span {
+  font-weight: 600;
+}
+
+.paginationClass button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-select.page-size-select {
+  min-width: 120px;
+  height: 38px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border-color: #ccc;
+}
+
+
+.btn:enabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn:disabled {
+  color: #aaa;
+  background-color: #f0f0f0;
+  border-color: #ddd;
+  cursor: not-allowed;
+}

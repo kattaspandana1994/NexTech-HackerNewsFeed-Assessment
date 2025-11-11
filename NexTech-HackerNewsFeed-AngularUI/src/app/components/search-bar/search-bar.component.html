@@ -1,0 +1,18 @@
+<div class="search-container my-4">
+  <div class="input-group">
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="query"
+      (input)="onSearch()"
+      placeholder="Search stories..."
+      aria-label="Search stories"
+    />
+    <button 
+      class="btn btn-primary"
+      type="button"
+      (click)="onSearch()">
+      Search
+    </button>
+  </div>
+</div>

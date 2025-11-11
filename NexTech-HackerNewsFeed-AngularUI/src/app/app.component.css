@@ -1,0 +1,36 @@
+/* Ensure full height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb; /* light neutral background */
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+}
+
+
+/* Give breathing room below fixed header */
+main, app-news-list {
+  display: block;
+  padding-top: 90px; /* height of the header + some gap */
+}
+
+/* Optional: nice smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+    color: blueviolet
+}
+.body{
+    background-color: darkseagreen ;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
